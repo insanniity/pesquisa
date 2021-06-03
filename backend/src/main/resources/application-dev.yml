@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    properties:
+      javax:
+        persistance:
+          schema-generation:
+            create-source: metadata
+          scripts:
+            action: create
+            create-targert: create.sql
+      hibernate:
+        hbm2ddl:
+          delimiter: ;
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/pesquisa
+    username: root
+    password:
+
