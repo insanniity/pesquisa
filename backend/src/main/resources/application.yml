@@ -1,5 +1,5 @@
 spring:
   profiles:
-    active: ${PROFILE_TYPE:test}
+    active: prod
   jpa:
     open-in-view: false
