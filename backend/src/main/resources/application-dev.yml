@@ -14,8 +14,8 @@ spring:
       jdbc:
         lob:
           non_contextual_creation: true
-      ddl-auto: create
+      ddl-auto: none
   datasource:
-    url: jdbc:postgres://localhost:5432/pesquisa
+    url: jdbc:mariadb://localhost:3306/pesquisa
     username: root
 
