@@ -21,7 +21,7 @@ public class Record implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Long age;
+    private Integer age;
     private Instant moment;
 
     @ManyToOne

@@ -4,12 +4,14 @@ import com.insanity.pesquisa.entities.Game;
 import com.insanity.pesquisa.entities.enums.Platform;
 import lombok.*;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class GameDTO {
+public class GameDTO implements Serializable {
 
     @EqualsAndHashCode.Include
     private Long id;
