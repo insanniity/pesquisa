@@ -7,6 +7,8 @@ import com.insanity.pesquisa.entities.Record;
 import com.insanity.pesquisa.repositories.GameRepository;
 import com.insanity.pesquisa.repositories.RecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,5 +36,8 @@ public class RecordService {
         return new RecordDTO(newEntity);
     }
 
-
+    @Transactional(readOnly = true)
+    public Page<RecordDTO> findByMoment(Instant minDate, Instant maxDate, PageRequest pageRequest) {
+        return repository.findByMoment(minDate, maxDate, pageRequest).map(x -> new RecordDTO(x));
+    }
 }
