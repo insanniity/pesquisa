@@ -2,22 +2,20 @@ spring:
   jpa:
     properties:
       javax:
-        persistance:
+        persistence:
           schema-generation:
             create-source: metadata
-          scripts:
-            action: create
-            create-targert: create.sql
-      hibernate:
-        hbm2ddl:
-          delimiter: ;
-        jdbc:
-          lob:
-            non_contextual_creation: true
+            scripts:
+              action: create
+              create-target: create.sql
     hibernate:
-      ddl-auto: none
+      hbm2ddl:
+        delimiter: ';'
+      jdbc:
+        lob:
+          non_contextual_creation: true
+      ddl-auto: create
   datasource:
-    url: jdbc:mysql://localhost:3306/pesquisa
+    url: jdbc:mariadb://localhost:3306/pesquisa
     username: root
-    password:
 
