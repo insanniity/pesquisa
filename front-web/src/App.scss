@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+$color-turquoise: #00D4FF;
+$color-coral: #ed7947;
+$color-dimgray: #4c5d67;
+$color-darkslategray: #37474f;
+$color-black: #0b1f34;
+
+
+$body-bg: $color-black;
+$font-family-sans-serif: 'Play', sans-serif;
+
+//$colors: (
+//        "blue":       $blue,
+//        "indigo":     $indigo,
+//        "purple":     $purple,
+//        "pink":       $pink,
+//        "red":        $red,
+//        "orange":     $orange,
+//        "yellow":     $yellow,
+//        "green":      $green,
+//        "teal":       $teal,
+//        "cyan":       $cyan,
+//        "white":      $white,
+//        "gray":       $gray-600,
+//        "gray-dark":  $gray-800
+//);
+
+$theme-colors: (
+        "dark":       $color-darkslategray
+);
+
+$navbar-dark-color: $color-darkslategray;
+
+@import "~bootstrap/scss/bootstrap";
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-primary {
+    color: $color-turquoise;
+}
+
+.text-secondary {
+    color: $color-coral;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.logo-text-1 {
+    color: $color-coral;
+}
+
+.logo-text-2 {
+    color: #FFF;
+}
+
