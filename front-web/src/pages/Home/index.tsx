@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import {ReactComponent as ArrowIcon} from "../../assets/imagens/arrow.svg";
 import {ReactComponent as GamerImage} from "../../assets/imagens/gamer.svg";
-import './styles.scss';
 
 
 const Home = () =>{
